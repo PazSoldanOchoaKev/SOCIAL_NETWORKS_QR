@@ -22,7 +22,6 @@ function redirectToFacebook(){
   }
 }
 
-
 function redirectToInstagram(){
   // Verificar si el usuario está en un dispositivo móvil
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -87,7 +86,7 @@ function redirectToGithub(){
 }
 
 
-const Token = "EAAIC0VsLAZAABALxBtU4sqq3ckLib90A2IJTZCzoOYpQwNUMcuZCOSPpCEPkjXq2KJv7eRBKoNZCaZAZAZAszaVt348dJqeFJ7aU75gxZAjwHth4l6Hja6EKwl05thUOQyYeaf8meCMqZA7dWG9UV0ty2bPly0MYi9EVzAzhVZCG36Hsoz1TjHvJ1ueUUyrqbKnuJTsiq7yqKBqgZDZD"
+const Token = "EAAIC0VsLAZAABACN85BetnhDwexUkNFKEZCyVdW3hVvZCm3ovjcO7H5oUKMVSI7EygRVipxa2wLfZAHicZAp0ZBlcUwZBwf8Rwm0a416j9eouBsqo6C35UeV5DdmpnixfIdbSDQwiLRRCnZCfW5Dd4eptdak10IkDTY4sOZCVZA71c13EZC7O3fh223ZBP2ecPAPB1nfGIN0WG8I6AZDZD"
 fetch(`https://graph.facebook.com/me?fields=name&access_token=${Token}`)
   .then(response => response.json())
   .then(data => {
