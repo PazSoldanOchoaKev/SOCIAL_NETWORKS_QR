@@ -1,0 +1,81 @@
+.color{
+    background-color: #f5f5f5;
+    align-items: center;
+
+}
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.body1{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 40px;
+}
+.icons{
+    display: flex;
+    column-gap: 25px;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: rgb(57, 54, 54);
+    border-radius: 50%;
+    outline: 2px solid rgb(65, 63, 63);
+    transition-property: 
+    outline-offset, outline-color,
+    background-color;
+    transition-duration: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+}
+.icon:hover i{
+    animation: shake .25s;
+}
+.icon--instagram:hover{
+    background-image:
+    radial-gradient(circle at 30% 107%,
+    #fdf497 0%, #fdf497 5%,
+    #fd5949 45%,#d6249f 60%,
+    #285AEB 90%);
+    outline-color: #a02d76;
+}
+.icon--twitter:hover{
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+.icon--linkedin:hover{
+    background-color:#0077b5 ;
+    outline-color: #0077b5;
+}
+.icon--wsp:hover{
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+.icon--github:hover{
+    background-color: #350d43c2;
+    outline-color: #350d43c2;
+}
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
