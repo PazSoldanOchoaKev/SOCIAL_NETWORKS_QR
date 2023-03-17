@@ -86,7 +86,7 @@ function redirectToGithub(){
 }
 
 
-const Token = "EAAIC0VsLAZAABACN85BetnhDwexUkNFKEZCyVdW3hVvZCm3ovjcO7H5oUKMVSI7EygRVipxa2wLfZAHicZAp0ZBlcUwZBwf8Rwm0a416j9eouBsqo6C35UeV5DdmpnixfIdbSDQwiLRRCnZCfW5Dd4eptdak10IkDTY4sOZCVZA71c13EZC7O3fh223ZBP2ecPAPB1nfGIN0WG8I6AZDZD"
+const Token = "EAAIC0VsLAZAABABdTZAMRRcf2CZAfUUU3NfjTIZAvcJoVZCeMuZCAXFGTMhiz37YXsWZBVuvC3HQYek9NwkPFV8dx0p2dNdhN5QuIYCmmByjAs4ibjCo58mNWMaadXYnHgLQMEZCZBnJZCZCZARUa5WstkFqlVLAu0RQIOaSwi9ncZAiVqQ2JtxXIHJapSWdiYum6pZB2bsgtxiSEMjWNMCsKOflogZApL1xZBoZC9PSiD38ZAxnH73E42XTvwJrvl"
 fetch(`https://graph.facebook.com/me?fields=name&access_token=${Token}`)
   .then(response => response.json())
   .then(data => {
