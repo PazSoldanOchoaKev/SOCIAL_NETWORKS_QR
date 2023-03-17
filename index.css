@@ -7,12 +7,28 @@
     display: flex;
     justify-content: center;
     height: 100%;
+    
 }
 .body1{
     display: flex;
     justify-content: center;
     height: 100%;
     margin-top: 40px;
+}
+h1 {
+    color: #333; /* Cambia el color del texto a gris oscuro */
+    font-size: 36px; /* Aumenta el tamaño del texto a 36px */
+    font-weight: bold; /* Hace que el texto sea más grueso y destacado */
+    text-align: center; /* Centra el texto en su contenedor */
+    text-transform: uppercase; /* Convierte todo el texto en mayúsculas */
+    margin-top: 50px; /* Agrega un margen superior de 50px */
+  }
+.subtitulo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .icons{
     display: flex;
@@ -51,6 +67,10 @@
 .icon--twitter:hover{
     background-color: #1da1f2;
     outline-color: #1da1f2;
+}
+.icon--facebook:hover{
+    background-color: #0b6196d4;
+    outline-color: #168dd7dc;
 }
 .icon--linkedin:hover{
     background-color:#0077b5 ;

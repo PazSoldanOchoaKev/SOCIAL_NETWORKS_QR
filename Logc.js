@@ -9,6 +9,20 @@ let miImagen = document.getElementById("miImagen");
 
 miImagen.src = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" + encodeURIComponent(miUrl);
 
+function redirectToFacebook(){
+  // Verificar si el usuario está en un dispositivo móvil
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Si está en un dispositivo móvil, intentar abrir en la aplicación de Facebook
+    window.location.href = 'fb://profile/kevin.pazsoldanochoa';
+  } else {
+    // Si no está en un dispositivo móvil, abrir en el navegador
+    window.open('https://www.facebook.com/kevin.pazsoldanochoa', '_blank');
+  }
+}
+
+
 function redirectToInstagram(){
   // Verificar si el usuario está en un dispositivo móvil
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -22,7 +36,58 @@ function redirectToInstagram(){
   }
 
 }
-const Token = "EAAIC0VsLAZAABAHuldl4jZBa4rgeu05DTZBJFiPgxBDvqE0QvlfnJ95igNtPii4mau2xy0e16VLG6NEp2ZAcSPT4VvVufeEwfhmI7ipzV4SXhorIPaGtxZAqI3uohh5FE52Lrkh2R9FKWUEuGWqpHWxWi67NKm13xo1VI1mgDqLTACf6MqBu6vZAiPh3S26xd8lDMW9QHg4gZDZD"
+function redirectToTwitter() {
+  // Verificar si el usuario está en un dispositivo móvil
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Si está en un dispositivo móvil, intentar abrir en la aplicación de Twitter
+    window.location.href = 'twitter://user?screen_name=SoldanOchoa';
+  } else {
+    // Si no está en un dispositivo móvil, abrir en el navegador
+    window.open('https://twitter.com/SoldanOchoa', '_blank');
+  }
+}
+
+function redirectToWhatsApp() {
+  // Número de teléfono al que se enviará el mensaje
+  var phoneNumber = '+51932233734';
+  // Mensaje a enviar
+  var message = 'Hola, estoy interesado en ti <3';
+  // Enlace que se utilizará para redirigir al usuario a WhatsApp
+  var link = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+  // Abrir enlace
+  window.open(link, '_blank');
+}
+
+function redirectToLinkedIn(){
+  // Verificar si el usuario está en un dispositivo móvil
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Si está en un dispositivo móvil, intentar abrir en la aplicación de LinkedIn
+    window.location.href = 'linkedin://profile/kevin-paz-soldan-ochoa-ba94a1223';
+  } else {
+    // Si no está en un dispositivo móvil, abrir en el navegador
+    window.open('https://www.linkedin.com/in/kevin-paz-soldan-ochoa-ba94a1223', '_blank');
+  }
+}
+
+function redirectToGithub(){
+  // Verificar si el usuario está en un dispositivo móvil
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Si está en un dispositivo móvil, intentar abrir en la aplicación de GitHub
+    window.location.href = 'github://user?username=PazSoldanOchoaKev';
+  } else {
+    // Si no está en un dispositivo móvil, abrir en el navegador
+    window.open('https://github.com/PazSoldanOchoaKev', '_blank');
+  }
+}
+
+
+const Token = "EAAIC0VsLAZAABALxBtU4sqq3ckLib90A2IJTZCzoOYpQwNUMcuZCOSPpCEPkjXq2KJv7eRBKoNZCaZAZAZAszaVt348dJqeFJ7aU75gxZAjwHth4l6Hja6EKwl05thUOQyYeaf8meCMqZA7dWG9UV0ty2bPly0MYi9EVzAzhVZCG36Hsoz1TjHvJ1ueUUyrqbKnuJTsiq7yqKBqgZDZD"
 fetch(`https://graph.facebook.com/me?fields=name&access_token=${Token}`)
   .then(response => response.json())
   .then(data => {

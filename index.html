@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
     
     <title>Document</title>
     <!-- <meta property="og:image" content="https://graph.facebook.com/1650285671781507/picture?type=normal"> -->
@@ -22,33 +22,42 @@
     <div class="body">
         <div class="row">
             <div class="col-12">
-                <label id="nombre"></label>
+                <label class="subtitulo" id="nombre"></label>
             </div>
             <div class="col-12" style="align-items:right;">
-                <img src="https://graph.facebook.com/3011143999028994/picture?type=normal" alt="Imagen">
+                <img src="https://graph.facebook.com/3011143999028994/picture?type=large" alt="Imagen">
             </div>
         </div>
     </div>
     <div class="icons body">
         <div class="row">
             <div class="col-12">
+                <a href="" onclick="redirectToFacebook()" class="icon icon--facebook">
+                    <i class="ri-instragam-line"></i>
+                    <iconify-icon icon="ri:facebook-line"></iconify-icon>
+                </a>
+
                 <a href="" onclick="redirectToInstagram()" class="icon icon--instagram">
                 <i class="ri-instragam-line"></i>
                 <iconify-icon icon="ri:instagram-line"></iconify-icon>
                 </a>
-                <a href="fb://" class="icon icon--twitter">
+                
+                <a href=""  onclick="redirectToTwitter()" class="icon icon--twitter">
                     <i class="ri-instragam-line"></i>
                     <iconify-icon icon="ri:twitter-line"></iconify-icon>
                 </a>
-                <a href="#" class="icon icon--linkedin">
-                    <i class="ri-instragam-line"></i>
-                    <iconify-icon icon="ri:linkedin-line"></iconify-icon>
-                </a>
-                <a href="#" class="icon icon--wsp">
+                
+                <a href="" onclick="redirectToWhatsApp()" class="icon icon--wsp">
                     <i class="ri-instragam-line"></i>
                     <iconify-icon icon="ri:whatsapp-line"></iconify-icon>
                 </a>
-                <a href="#" class="icon icon--github">
+                
+                <a href="" onclick="redirectToLinkedIn()" class="icon icon--linkedin">
+                    <i class="ri-instragam-line"></i>
+                    <iconify-icon icon="ri:linkedin-line"></iconify-icon>
+                </a>
+                
+                <a href="" onclick="redirectToGithub()" class="icon icon--github">
                     <i class="ri-instragam-line"></i>
                     <iconify-icon icon="ri:github-line"></iconify-icon>
                 </a>
